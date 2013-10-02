@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong Title:
+  = @topic.title
+p
+  strong Board:
+  = @topic.board_id
+
+- @topic.posts.order(:created_at).each do |p|
+  div = p.body
+
+= link_to 'Edit', edit_topic_path(@topic)
+'|
+= link_to 'Back', topics_path

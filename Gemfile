@@ -35,7 +35,11 @@ end
 # Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.0.0'
 
+#Use the slim template language
 gem 'slim-rails'
+
+gem 'execjs'
+gem 'therubyracer'
 
 # Use unicorn as the app server
 # gem 'unicorn'

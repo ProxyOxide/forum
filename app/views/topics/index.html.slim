@@ -6,13 +6,11 @@ table
     th Board
     th
     th
-    th
 
   - @topics.each do |topic|
     tr
-      td = topic.title
+      td = link_to topic.title, topic
       td = topic.board_id
-      td = link_to 'Show', topic
       td = link_to 'Edit', edit_topic_path(topic)
       td = link_to 'Destroy', topic, :confirm => 'Are you sure?', :method => :delete
 

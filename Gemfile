@@ -41,6 +41,8 @@ gem 'slim-rails'
 gem 'execjs'
 gem 'therubyracer'
 
+gem 'acts_as_tree'
+
 # Use unicorn as the app server
 # gem 'unicorn'
 
